@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  max-width: 600px; /* Adjust the maximum width as needed */
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column; /* Align form elements vertically */
+  align-items: center; /* Center form elements horizontally */
+  gap: 20px; /* Add spacing between form elements */
+}
+
+/* Center-align the submit button */
+button {
+  align-self: flex-end;
+}
+
+/* Equal width for all form fields */
+mat-form-field {
+  width: 100%; /* Each field occupies the full width */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Distribute available space evenly among form fields */
+mat-form-field input,
+mat-form-field mat-select {
+  flex: 1;
+}
+.form-heading {
+  font-size: 24px;
+  margin-bottom: 20px; /* Add some space between heading and form */
+}
+.button-group {
+  display: flex;
+  justify-content: space-between; /* Align buttons with space in between */
+}
+
+/* Center-align the submit button */
+button {
+  align-self: flex-end;
+}
+
+.main-container{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+}
