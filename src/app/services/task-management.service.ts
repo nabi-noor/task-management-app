@@ -20,7 +20,6 @@ export class TaskManagementService {
   deleteTask(task: Task){
     let index = this.tasks.indexOf(task);
     if(index != -1){
-      debugger;
       if(this.tasks.length == 1){
         this.tasks = []
       }else{

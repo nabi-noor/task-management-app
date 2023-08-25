@@ -26,11 +26,8 @@ export class CreateTaskComponent {
   }
 
   submitForm() {
-    console.log("form log", this.form)
     if (this.form.valid) {
-      console.log('Form submitted:', this.form.value);
       let tempTask: Task = this.form.value;
-      console.log('final task', tempTask);
       this.taskManagementService.createTask(tempTask);
       this.navigationService.navigateToHome();
     }
